@@ -1,0 +1,109 @@
+<header class="header">
+  <div class="header__logo">ПЛИТ<sup>№99</sup></div>
+  <nav class="header__nav">
+    <a href="./index.html" class="header__link">Главная</a>
+    <a href="#" class="header__link">Абитуриентам</a>
+    <a href="./directions.html" class="header__link">Наши направления</a>
+    <a href="#" class="header__link">О нас</a>
+    <a href="#contacts" class="header__link">Контакты</a>
+  </nav>
+</header>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" placeholder="имя" />
+      <input type="password" placeholder="фамилия" />
+      <input type="text" placeholder="отчество" />
+      <input type="text" placeholder="email" />
+      <input type="password" placeholder="номер телефона" />
+      <div class="dropdown-container">
+        <label for="profession">Выберите профессию:</label>
+        <select id="profession" name="profession">
+          <option value="info_security">Back-end</option>
+          <option value="graphic_designer">Front-end</option>
+          <option value="graphic_designer">Дизайн Технологии</option>
+          <option value="graphic_designer">Робототехника и мехатроника</option>
+          <option value="graphic_designer">Системный администратор</option>
+          <option value="graphic_designer">
+            Автослесарь по ремонту автомобилей
+          </option>
+          <option value="network_specialist">Ремонт спецтехники</option>
+          <option value="web_dev">Информационная безопасность</option>
+          <option value="junior_manager">Мобильная разработка</option>
+        </select>
+      </div>
+      <button type="button">Записаться</button>
+    </form>
+  </div>
+</div>
+<link rel="stylesheet" href="./assets/css/reg.css" />
+<link rel="stylesheet" href="./assets/css/style.css" />
+<footer id="contacts" class="footer">
+  <div class="footer__container">
+    <div class="footer__column footer__column--navigation">
+      <h3 class="footer__title">Навигация</h3>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Главная</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Абитуриентам</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Вакансии</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Партнеры</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column--contacts">
+      <h3 class="footer__title">Контакты</h3>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <button id="phone-button" onclick="copyToClipboard()">
+            +996 312 53-39-05
+          </button>
+        </li>
+        <li class="footer__item">
+          Электронная почта: proffesionalnyylitsey99@mail.ru
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://2gis.kg/bishkek/firm/70000001019348944"
+            class="footer__item"
+            >Адрес: 18 ул. Горького</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column--social">
+      <h3 class="footer__title">Социальные сети</h3>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="https://www.instagram.com/99litsey/" class="footer__link"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://www.facebook.com/p/99litsey-100064300526828/"
+            class="footer__link"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://x.com/kaktus__media/status/1669273618885271552"
+            class="footer__link"
+            >Twitter</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer__column footer__column--application">
+      <h3 class="footer__title">Онлайн заявка</h3>
+      <a href="./reg.html" class="footer__button">Записаться</a>
+    </div>
+  </div>
+</footer>

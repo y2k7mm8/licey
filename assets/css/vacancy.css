@@ -1,0 +1,146 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  color: #1a73e8;
+  font-size: 2.5rem;
+  border-bottom: 4px solid #1a73e8;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-section {
+  flex: 3;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-section:hover {
+  transform: translateY(-10px);
+}
+
+.main-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1a73e8;
+  text-transform: capitalize;
+  border-bottom: 2px solid #1a73e8;
+  padding-bottom: 5px;
+}
+
+.main-description {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.requirements h3,
+.stack h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+ul {
+  list-style: disc;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar > div {
+  background: #f0f8ff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar > div:hover {
+  transform: translateY(-10px);
+}
+
+.sidebar h3 {
+  font-size: 1.3rem;
+  color: #1a73e8;
+  margin-bottom: 15px;
+}
+
+.contacts ul,
+.offers ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts li,
+.offers li {
+  margin: 12px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  background: #1a73e8;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+a:hover {
+  background: #155c8a;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-section {
+    margin-bottom: 30px;
+  }
+}
