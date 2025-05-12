@@ -450,71 +450,237 @@ a {
   border: none;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+  margin-left: 10px;
+}
+.burger span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.burger.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -70vw;
+    width: 70vw;
+    max-width: 320px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 80px 24px 24px 24px;
+    box-shadow: -2px 0 16px rgba(0, 0, 0, 0.08);
+    transition: right 0.3s;
+    z-index: 1001;
+  }
+  .header__nav.open {
+    right: 0;
+  }
+  .header__link {
+    width: 100%;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
+  }
+  .header {
+    flex-wrap: wrap;
+    padding: 10px 10px;
+  }
+}
+
+.burger-menu-backdrop {
+  display: none;
+}
+.burger-menu-backdrop.active {
+  display: block;
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
 .footer__button:hover {
   background-color: #0056b3;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   body {
-    padding: 0 20px;
+    padding: 0 5px;
   }
 
   .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .header__nav {
-    flex-direction: column;
+    padding: 10px 5px;
     gap: 10px;
   }
 
+  .header__logo {
+    font-size: 1.1rem;
+  }
+
+  .header__link {
+    padding: 6px 0;
+    font-size: 0.95rem;
+  }
+
+  .header__cta {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+    padding: 10px 0;
+  }
+
   .hero {
+    flex-direction: column;
+    min-height: 350px;
     height: auto;
-    padding: 20px 0;
+    padding: 10px 0;
   }
 
   .hero__title {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
   }
 
   .hero__button {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     padding: 10px 20px;
   }
 
   .directions {
-    padding: 20px;
+    padding: 10px 0;
+  }
+
+  .directions__title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
   }
 
   .directions__grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .directions__caption {
+    font-size: 0.95rem;
+    padding: 7px 0;
   }
 
   .news-section {
-    padding: 20px;
+    padding: 10px 0;
     height: auto;
   }
 
-  .news-title {
-    font-size: 20px;
+  .news-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 
-  .news-all-link {
-    font-size: 14px;
+  .news-title {
+    font-size: 1.1rem;
+  }
+
+  .news-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .news-card__image {
+    height: 140px;
+  }
+
+  .news-card__title {
+    font-size: 1rem;
+    margin: 8px;
+  }
+
+  .news-card__link {
+    font-size: 0.95rem;
+    padding: 8px;
+    margin: 8px;
+  }
+
+  .reviews {
+    padding: 20px 5px;
+  }
+
+  .reviews__title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .reviews__container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .review-card {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .review-card__text {
+    font-size: 0.95rem;
+  }
+
+  .review-card__image {
+    width: 40px;
+    height: 40px;
   }
 
   .footer {
-    padding: 20px;
+    padding: 10px 0;
   }
 
   .footer__container {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    padding: 0 5px;
   }
 
   .footer__column {
     margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .footer__title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer__button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
   }
 }

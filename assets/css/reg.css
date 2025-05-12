@@ -113,7 +113,7 @@ select {
   color: #b3b3b3;
 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  appearance: none; /* Убирает стандартную стрелку в некоторых браузерах */
+  appearance: none;
   cursor: pointer;
 }
 

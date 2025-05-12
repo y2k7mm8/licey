@@ -136,12 +136,11 @@ a {
   color: #333;
 }
 
-/* Сетка с использованием Flexbox */
 .directions__grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center; /* Центровка карточек */
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -153,8 +152,8 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 calc(33.333% - 20px); /* Ширина карточки: треть от ширины контейнера, с учетом gap */
-  max-width: calc(33.333% - 20px); /* Ограничение для больших экранов */
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
   box-sizing: border-box;
 }
 
@@ -163,14 +162,12 @@ a {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Изображения */
 .directions__image {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Подпись */
 .directions__caption {
   padding: 15px;
   text-align: center;
